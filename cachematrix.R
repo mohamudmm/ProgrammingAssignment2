@@ -1,6 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
+##The script contains two functions  makeCacheMatrix and cacheSolve.
 ## This function takes a matrix as an argument and returns a list of functions that can calculate the 
 ## inverse of a given matrix if the inverse has not been calculated and store the inverse matrix
 
@@ -22,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function gets the inverse of a given matrix if it is not already cached and puts the calculated
-## inverse matrix in cache
+## inverse matrix in cache.If the inverse matrix has been previously calculated it returns the cached
+##matrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
